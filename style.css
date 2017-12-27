@@ -1,8 +1,7 @@
- .headerimage{
- 
+.headerimage{
  background-image: url(Images/Homepage-images/header-cmd-home.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 100%;
- }
+ background-repeat: no-repeat;
+ background-size: 100%;
+ width: 100%;
+}
  
