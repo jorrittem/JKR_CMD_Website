@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact</title>
+</head>
+<body>
+		<script type="text/javascript">
+		function myFunction() {							//Create a function, toggles between adding and removing responsive class to the navbar
+			var x = document.getElementById("myTopnav") //Get the ID from the html div
+			if (x.className === "topnav") {				//Checks to see if get the responive class
+				x.className += " responsive ";
+			} else{
+				x.className = "topnav";
+			}
+
+		}	
+	</script>
+
+	<div class="topnav" id="myTopnav">
+		<a href="Navbar.html" >Home</a>
+		<a href="#CMDopleidingen">CMD Opleidingen</a>
+  		<a href="#Majors">Majors</a>
+  		<a href="#Praktische Informatie">Praktische Informatie</a>
+  		<a href="Contact.html" class="active">Contact</a>
+  		<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+	</div>
+</body>
+</html>
