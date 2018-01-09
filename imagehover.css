@@ -1,0 +1,62 @@
+.divImg {
+  position: relative;
+  overflow: hidden;
+}
+
+.divImg .caption {
+    height:100%;
+    width: 100%;
+	cursor: pointer;
+	position: absolute;
+    top:0;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.35s ease;
+}
+
+.effect1:hover .caption {
+  transform: scaleY(1);
+}
+.caption-text h4{
+	text-transform: uppercase;
+	font-size: 24px;
+}
+
+.caption-text h5{
+	font-size: 15px;
+	display: inline-block;
+	width: 100px;
+	height: 20px;
+	border: 2px solid #ffffff;
+	border-radius: 40px;
+	text-align: center;
+	padding: 15px;
+}
+
+.caption-text a{
+	color: #ffffff;
+	text-decoration: none;
+
+}
+
+.caption-text{
+	z-index: 5;
+	color: #fff;
+    position: absolute;
+    width: 100%;
+    top: 50%;   
+    transform: translateY(-50%); 
+    text-align: center;
+}
+.overlay {
+	background-color: #ee7f00;
+	height: 100%;
+	width: 100%;
+    position: absolute;
+}
+
+
+
+
+
+
