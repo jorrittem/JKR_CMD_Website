@@ -92,11 +92,14 @@ a.active { /* style for the active page, border at the bottom and font color cha
 
 /* homepage content */
 .headercontent  {
-	background-image: url(images/header-zonder-tekst.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: flex;
-} 
+}
+
+.home {
+	background-image: url(../images/banner-home.jpg); /* banner image */
+}
 
 .cmd {
 	margin-left: 33%;
@@ -127,20 +130,24 @@ a.active { /* style for the active page, border at the bottom and font color cha
 	width: 33%;
 }
 
+.heart a:hover .fa-heart-o {
+	color: #f00; /* red */
+}
+
 .intro-text {
-	color: #767676;
+	color: #999; /* gray */
 	margin-left: 10%;
 	padding-right: 3%;
 	width: 40%;
 }
 
 .intro-text a {
-	color: #7e72ae;
+	color: #7e72ae; /* blue */
 	text-decoration: none;
 }
 
 .intro-text h2 {  
-	color: #020202;
+	color: #020202; /* black */
 	font-size: 30px;
  }
 
@@ -163,6 +170,64 @@ a.active { /* style for the active page, border at the bottom and font color cha
 
 .intro-text span {
 	font-weight: bold;
+}
+
+.div-img {
+	overflow: hidden;
+	position: relative;
+}
+
+.div-img .caption {
+	cursor: pointer;
+	height:100%;
+	position: absolute;
+	top:0;
+	transform: scaleY(0);
+	transform-origin: top;
+	transition: transform 0.35s ease;
+	width: 100%;
+}
+
+.effect1:hover .caption {
+	transform: scaleY(1);
+}
+
+.caption-text h4 {
+	font-size: 24px;
+	text-transform: uppercase;
+}
+
+.caption-text h5 {
+	border: 2px solid #fff; /* white */
+	border-radius: 40px;
+	display: inline-block;
+	font-size: 15px;
+	height: 20px;
+	padding: 15px;
+	text-align: center;
+	width: 100px;
+}
+
+.caption-text a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.caption-text {
+	color: #fff; /* white */
+	position: absolute;
+	text-align: center;
+	top: 50%;   
+	transform: translateY(-50%); 
+	width: 100%;
+	z-index: 5;
+}
+
+.overlay {
+	background-color: #ee7f00; /* orange */
+	height: 100%;
+    position: absolute;
+	width: 100%;
 }
 
 /* footer */
