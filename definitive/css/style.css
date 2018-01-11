@@ -1,0 +1,280 @@
+/* import roboto font */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* general */
+body,
+html {
+	font-family: roboto, arial, sans-serif; /* roboto as standard font, arial & sans-serif are backups */
+	font-size: 14px; /* universal font size */
+	margin: 0; /* remove standard margin that some browsers add */
+	padding: 0; /* remove standard padding that some browsers add */
+}
+
+.spacing-left {
+	padding-left: 5px;
+}
+
+.spacing-right {
+	padding-right: 5px;
+}
+
+/* navbar */
+.menunav {
+	background-color: #4b4a4b;
+	display: flex;
+	height: 50px;
+	justify-content: flex-end;
+}
+
+.menunav a {
+	color: #fff;
+	font-size: 17px;
+	padding: 14px 16px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.menunav-hover:hover {
+	color: #666;
+}
+
+.menunav input[type=text] {
+	border: none;
+	border-radius: 50px;
+	font-size: 16px;
+	margin-right: 16px;
+}
+
+.topnav {
+	background-color: #fefbfb;	/* add color to the background */
+	display: flex;
+	overflow: hidden;
+	text-align: center;
+}
+
+.topnav-hover:hover, /* style for the hover */
+a.active { /* style for the active page, border at the bottom and font color changes, .active alone does not overwrite color of .topnav a whereas a.active does */
+	border-bottom: 2px solid #ee7b00;
+	color: #ee7b00;
+}
+
+.topnav .icon {
+	display: none; /* hide the link that opens only on small screens */
+}
+
+.topnav-logo {
+	margin-left: 5%;
+	width: 20%;
+}
+
+.topnav-logo img {
+	width: 100%;
+}
+
+.topnav-menu {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	width: 75%;
+}
+
+.topnav-menu a { /* style the links in the navbar */
+	color: #999;
+	display: inline-block; /* fixes links from ignoring parent height for padding */
+	font-size: 15px;
+	font-weight: bold;
+	margin-left: 1%;
+	margin-right: 1%;
+	padding: 14px 16px;
+	text-align: center;
+	text-decoration: none;
+}
+
+/* footer */
+footer,
+footer > div { /* selects all div elements where the parent is a footer element */
+	align-items: center; /* centers childs vertically */
+	display: flex; /* makes it easier to design flexible responsive layout structure without having to use floats or positioning */
+	flex-wrap: wrap; /* pushes children containers below when they no longer fit in the same row */
+	justify-content: space-around; /* centers childs horizontally */
+	text-align: center; /* universal footer text centering */
+}
+
+.footer-logo {
+	height: 200px;
+	width: 45%;
+}
+
+.footer-logo img {
+	width: 300px;
+}
+
+.footer-links {
+	align-items: baseline; /* starts lists on same height */
+	height: 200px;
+	text-align: left;
+	width: 55%;
+}
+
+.footer-links ul {
+	list-style-type: none; /* remove bullet from lists */
+	margin-top: 45px; /* correction for baseline to bring it closer to centering */
+	padding: 0; /* remove standard ul padding */
+	width: 25%;
+}
+
+.footer-links li:first-child { /* applies only to first item in lists */
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 40px; /* extra spacing to emphasize first item as title */
+}
+
+.footer-links a {
+	color: #999;
+	text-decoration: none; /* remove underline from links */
+}
+
+.footer-links a:hover { /* when hovering the link */
+	color: #666;
+}
+	
+.footer-copyright {
+	border-top: 1px solid #e6e6e6;
+	color: #999;
+	font-size: 12px;
+	height: 100px;
+	width: 33%;
+}
+
+.footer-quote {
+	border-top: 1px solid #e6e6e6;
+	font-size: 20px;
+	font-weight: bold;
+	height: 100px;
+	width: 34%;
+}
+
+.footer-quote span {
+	color: #ee7b00; /* orange */
+}
+
+.footer-social {
+	border-top: 1px solid #e6e6e6;
+	font-size: 25px;
+	height: 100px;
+	width: 33%;
+}
+
+.footer-social a {
+	color: #999;
+}
+
+.footer-social a:hover .fa-facebook { /* applies to icon when hovering the link (a) */
+	color: #3b5998;
+}
+
+.footer-social a:hover .fa-twitter {
+	color: #00aced;
+}
+
+.footer-social a:hover .fa-youtube {
+	color: #cd201f;
+}
+
+.footer-social a:hover .fa-linkedin {
+	color: #007bb6;
+}
+
+.footer-social a:hover .fa-instagram {
+	color: #125688;
+}
+
+.footer-social a:hover .fa-snapchat {
+	color: #fffc00;
+}
+
+/* 1024px is breakpoint for desktops, laptops */
+@media (max-width: 1023px) {
+	.topnav-menu a { /* style the links in the navbar */
+		margin: 0;
+	}
+	
+	.footer-social a {
+		width: 33%; /* limits buttons to 3 per row */
+	}
+}
+
+/* 720px is breakpoint for tablets, below is for mobile */
+@media (max-width: 719px) {
+	/* navbar */
+	.menunav a:not(:last-child) {
+
+		display: none;
+	}
+	
+	.topnav {
+		text-align: left;	
+	}
+	
+	.topnav a:not(:first-child) {
+		display: none;
+	}
+
+	.topnav a:hover .fa-twitter{
+		display: none;
+	}
+	
+	.topnav a.icon {
+		float: right;
+		display: block;
+	}
+	
+	.topnav-menu {
+		display: block;
+	}
+	
+	.topnav-menu.responsive { /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+		position: relative;
+	}
+	
+	.topnav-menu.responsive a.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	
+	.topnav-menu.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+	
+	.topnav-logo {
+		display: none;
+	}
+	
+	.topnav-menu {
+		width: 100%;
+	}
+	
+	/* footer */
+	.footer-logo {
+		width: 100%; /* enlarge to entire device width */
+	}
+	
+	.footer-links {
+		display: none; /* disable section */
+	}
+	
+	.footer-copyright { /* enlarge to half the device width */
+		width: 50%;
+	}
+	
+	.footer-quote {
+		width: 50%;
+	}
+	
+	.footer-social {
+		display: none;
+	}
+}
