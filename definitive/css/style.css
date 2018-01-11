@@ -90,6 +90,146 @@ a.active { /* style for the active page, border at the bottom and font color cha
 	text-decoration: none;
 }
 
+/* homepage content */
+.headercontent  {
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+}
+
+.home {
+	background-image: url(../images/banner-home.jpg); /* banner image */
+}
+
+.cmd {
+	margin-left: 33%;
+	width: 34%;	
+}
+
+.cmd h1{
+	font-size: 40px;
+	color: #fff;
+	text-align: center;
+	font-weight: normal;
+}
+
+.cmd p {
+	border: 3px solid #999;
+	color:#999; /* gray */
+	margin: 5% auto 0;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	text-align: center;
+	width: 20%;
+}
+
+.heart {
+	color: #999;
+	font-size: 20px;
+	height: 100px;
+	width: 33%;
+}
+
+.heart a:hover .fa-heart-o {
+	color: #f00; /* red */
+}
+
+.intro-text {
+	color: #999; /* gray */
+	margin-left: 10%;
+	padding-right: 3%;
+	width: 40%;
+}
+
+.intro-text a {
+	color: #7e72ae; /* blue */
+	text-decoration: none;
+}
+
+.intro-text h2 {  
+	color: #020202; /* black */
+	font-size: 30px;
+ }
+
+.intro-image {
+	width: 50%;  
+}
+
+.intro-image img {
+	width: 100%;
+}
+
+.homepage-content {
+	display: flex;
+	margin-top: 3%;
+}
+
+.introtext-bold {
+	font-weight: bold;
+}
+
+.intro-text span {
+	font-weight: bold;
+}
+
+.div-img {
+	overflow: hidden;
+	position: relative;
+}
+
+.div-img .caption {
+	cursor: pointer;
+	height:100%;
+	position: absolute;
+	top:0;
+	transform: scaleY(0);
+	transform-origin: top;
+	transition: transform 0.35s ease;
+	width: 100%;
+}
+
+.effect1:hover .caption {
+	transform: scaleY(1);
+}
+
+.caption-text h4 {
+	font-size: 24px;
+	text-transform: uppercase;
+}
+
+.caption-text h5 {
+	border: 2px solid #fff; /* white */
+	border-radius: 40px;
+	display: inline-block;
+	font-size: 15px;
+	height: 20px;
+	padding: 15px;
+	text-align: center;
+	width: 100px;
+}
+
+.caption-text a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.caption-text {
+	color: #fff; /* white */
+	position: absolute;
+	text-align: center;
+	top: 50%;   
+	transform: translateY(-50%); 
+	width: 100%;
+	z-index: 5;
+}
+
+.overlay {
+	background-color: #ee7f00; /* orange */
+	height: 100%;
+    position: absolute;
+	width: 100%;
+}
+
 /* footer */
 footer,
 footer > div { /* selects all div elements where the parent is a footer element */

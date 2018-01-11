@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="files/font-awesome-4.7.0/css/font-awesome.min.css">
-	<script src="js/main.js"></script>
-	<title>Navbar</title>
-</head>
+	<head>
+		<!-- link to stylesheet -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		
+		<!-- link to font awesome -->
+		<link rel="stylesheet" href="files/font-awesome-4.7.0/css/font-awesome.min.css">
+		
+		<!-- utf-8 for special character compatibility -->
+		<meta charset="UTF-8">
+		
+		<!-- link to javascript -->
+		<script src="js/main.js"></script>
+		
+		<!-- link to favicon for tab -->
+		<link rel="icon" href="images/favicon.png" type="image/png" sizes="32x32">
+		
+		<!-- title of the page; found in tab -->
+		<title>Hanzehogeschool - Home</title>
+	</head>
 	<body>
 		
+		<!-- contains user options -->
 		<div class="menunav">
 			<a class="menunav-hover" href="#Language">Language</a>
 			<a class="menunav-hover" href="#favoriet"><span class="fa fa-heart spacing-right"></span>Favoriet</a>
@@ -16,6 +29,8 @@
 			<a class="menunav-hover" href="#login"><span class="fa fa-user spacing-right"></span>login</a>
 		</div>
 
+		
+		<!-- contains logo and page links -->
 		<div class="topnav">
 			<div class="topnav-logo">
 				<img src="images/logo.png" alt="hanze logo">
@@ -26,10 +41,93 @@
 				<a class="topnav-hover" href="#majors">Majors.</a>
 				<a class="topnav-hover" href="#praktische Informatie">Praktische Info.</a>
 				<a class="topnav-hover" href="contact.html">Contact.</a>
+				
+				<!-- hamburger menu; only visible on mobile; uses main.js -->
 				<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
 			</div>
 		</div>
 
+		<!-- contains banner of homepage -->
+		<div class="headercontent home">
+			<div class="cmd">
+				<p>CMD</p>
+				<h1>Communication & Multimedia Design</h1>
+			</div>
+			<div class="heart">
+				<a href="#"><span class="fa fa-heart-o"></span></a>
+			</div>    
+		</div>
+        
+		<!-- contains content of homepage -->
+		<div class="homepage-content">
+			<div class="intro-text">
+				<h2>Communication & Multimedia Design!</h2>
+				<p>Hou jij van ontwerpen? Ben jij bekend met de nieuwste technologie? Tijdens de opleiding  Communication & Multimedia Design leer je websites ontwerpen, games developen, campagnes bedenken en ontwikkelen.</p>
+				<p>Binnen de opleiding <a href="#">Communication & Multimedia Design</a> (cmd) komen al deze onderwerpen aan bod in drie verschillende richtingen (majors): <span>Visual Design, Interaction Design </span> en <span>Game Design.</span> Samen vormen deze drie majors de opleiding Communication & Multimedia Design. Kies jij voor technische ontwikkeling, creatieve uitdagingen of juist allebei? Bij CMD in Groningen bepaal jij je eigen weg én leerroute. </p>
+				<p class="introtext-bold">Bachelor opleiding, voltijd | Duur: 4 jaar | Start: September | Graad: Bachelor of sience</p>                 
+			</div>
+			<div class="intro-image">
+				<img src="images/intro-image.png" alt="Laptop with mouse">
+			</div>
+		</div>
+		
+		 <!-- contains game design image -->
+		<div class="div-img effect1" style="float:left;">
+		
+			<!-- contains initial image -->
+			<img src="images/game-design-major.jpg" width="100%">
+
+			<div class="caption">
+		
+				<!-- contains image visible when hovering -->
+				<div class="overlay"></div>
+				
+				<div class="caption-text">
+					<h4>Game Design</h4>
+					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<a href="#Major"><h5>Bekijk Major</h5></a>
+				</div>
+			</div>
+		</div>
+
+        <!-- contains interaction design image -->
+		<div class="div-img effect1" style="float:left;">
+		
+			<!-- contains initial image -->
+			<img src="images/Interaction Design.jpg" width="100%">
+			
+			<div class="caption">
+			
+			<!-- contains image visible when hovering -->
+				<div class="overlay"></div>
+				
+				<div class="caption-text">
+					<h4>Interaction Design</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<a href="#Major"><h5>Bekijk Major</h5></a>
+				</div>
+			</div>
+		</div>
+      
+		<!-- contains visual design image -->
+		<div class="div-img effect1" style="float:left;">
+		
+			<!-- contains initial image -->
+			<img src="images/visual-design-major.jpg" width="100%">
+
+			<div class="caption">
+			
+				<!-- contains image visible when hovering -->
+				<div class="overlay"></div>
+				
+				<div class="caption-text">
+					<h4>Visual Design</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<a href="#Major"><h5>Bekijk Major</h5></a>
+				</div>
+			</div>
+		</div>
+		
 		<!-- universal html5 container for footer -->
 		<footer>
 		
