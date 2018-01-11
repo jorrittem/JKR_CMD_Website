@@ -90,6 +90,81 @@ a.active { /* style for the active page, border at the bottom and font color cha
 	text-decoration: none;
 }
 
+/* homepage content */
+.headercontent  {
+	background-image: url(images/header-zonder-tekst.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+} 
+
+.cmd {
+	margin-left: 33%;
+	width: 34%;	
+}
+
+.cmd h1{
+	font-size: 40px;
+	color: #fff;
+	text-align: center;
+	font-weight: normal;
+}
+
+.cmd p {
+	border: 3px solid #999;
+	color:#999; /* gray */
+	margin: 5% auto 0;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	text-align: center;
+	width: 20%;
+}
+
+.heart {
+	color: #999;
+	font-size: 20px;
+	height: 100px;
+	width: 33%;
+}
+
+.intro-text {
+	color: #767676;
+	margin-left: 10%;
+	padding-right: 3%;
+	width: 40%;
+}
+
+.intro-text a {
+	color: #7e72ae;
+	text-decoration: none;
+}
+
+.intro-text h2 {  
+	color: #020202;
+	font-size: 30px;
+ }
+
+.intro-image {
+	width: 50%;  
+}
+
+.intro-image img {
+	width: 100%;
+}
+
+.homepage-content {
+	display: flex;
+	margin-top: 3%;
+}
+
+.introtext-bold {
+	font-weight: bold;
+}
+
+.intro-text span {
+	font-weight: bold;
+}
+
 /* footer */
 footer,
 footer > div { /* selects all div elements where the parent is a footer element */
