@@ -208,6 +208,7 @@ footer > div { /* selects all div elements where the parent is a footer element 
 @media (max-width: 719px) {
 	/* navbar */
 	.menunav a:not(:last-child) {
+
 		display: none;
 	}
 	
@@ -216,6 +217,10 @@ footer > div { /* selects all div elements where the parent is a footer element 
 	}
 	
 	.topnav a:not(:first-child) {
+		display: none;
+	}
+
+	.topnav a:hover .fa-twitter{
 		display: none;
 	}
 	
