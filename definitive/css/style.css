@@ -238,6 +238,61 @@ a.active { /* style for the active page, border at the bottom and font color cha
 	width: 100%;
 }
 
+/* agenda */
+.agenda {
+	margin: 3%;
+}
+
+.agenda h3 {
+	color: #ee7b00; /* orange */
+	font-size: 20px;
+}
+
+
+.agenda-table {
+	margin: 0 auto 1%;
+	width: 50%;
+}
+
+.agenda-table table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.agenda-table td {
+    border: 1px solid #ddd; /* gray */
+    text-align: left;
+    padding: 20px;
+}
+
+.agenda-table td:first-child { /* every first table cell of a row */
+	background-color: #ee7b00; /* orange */
+	color: #fff /* white */
+}
+
+.agenda-buttons {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0 auto;
+	width: 50%;
+}
+
+.agenda-buttons a {
+	align-items: center;
+	color: #ee7b00; /* orange */
+	display: flex; /* to align button and text */
+	font-size: 20px;
+	text-decoration: none; /* remove underline */
+}
+
+.agenda-buttons span {
+	font-size: 40px;
+	padding: 5px;
+}
+
 /* meeting */
 .meeting {
 	background-color: #4b4a4b; /* gray */
@@ -424,6 +479,12 @@ footer > div { /* selects all div elements where the parent is a footer element 
 		margin: 0;
 	}
 	
+	/* agenda */
+	.agenda-table,
+	.agenda-buttons	{
+		width: 70%;
+	}
+	
 	.footer-social a {
 		width: 33%; /* limits buttons to 3 per row */
 	}
@@ -499,6 +560,12 @@ footer > div { /* selects all div elements where the parent is a footer element 
 	.div-img {
 		margin: 5%;
 		width: 50%;
+	}
+	
+	/* agenda */
+	.agenda-table,
+	.agenda-buttons	{
+		width: 90%;
 	}
 	
 	/* meeting */
