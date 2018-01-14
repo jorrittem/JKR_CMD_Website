@@ -234,8 +234,85 @@ a.active { /* style for the active page, border at the bottom and font color cha
 .overlay {
 	background-color: #ee7f00; /* orange */
 	height: 100%;
-    position: absolute;
+	position: absolute;
 	width: 100%;
+}
+
+/* meeting */
+.meeting {
+	background-color: #4b4a4b; /* gray */
+	color: #d4d4d4; /* white */
+	margin-top: 3%;
+	padding: 3% 0 5%;
+	text-align: center;
+}
+
+.meeting-intro {
+	margin: 0 auto;
+	width: 50%;
+}
+
+.meeting-intro h3 {
+	color: #fff; /* white */
+	font-size: 28px;
+	font-weight: normal;
+}
+
+.meeting-jonathan {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.meeting-image {
+	margin-right: 10%; /* spacing between image and contact */
+}
+
+.meeting-image img {
+	width: 150px; /* px instead of % to avoid resizing */
+}
+
+.meeting-contact p {
+	margin: 0;
+}
+
+.meeting-contact h4 {
+	color: #fff; /* white */
+	font-weight: normal;
+}
+
+.align-left {
+	display: inline-block;
+	text-align: left;
+}
+
+/* register */
+.register {
+	align-items: center;
+	background-color: #303030; /* gray */
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 2% 0 2%;
+}
+
+.register-convinced {
+	color: #7b7b7b; /* gray */
+	margin-right: 10%;
+}
+
+.register-convinced span {
+	color: #a6a6a6; /* gray */
+	font-style: italic;
+}
+
+.register-button {
+	background-color: #6848e1; /* purple */
+	border-radius: 20px; /* rounded edges */
+	color: #fff; /* white */
+	padding: 5px 15px;
+	text-decoration: none; /* remove default underline */
 }
 
 /* footer */
@@ -422,6 +499,28 @@ footer > div { /* selects all div elements where the parent is a footer element 
 	.div-img {
 		margin: 5%;
 		width: 50%;
+	}
+	
+	/* meeting */
+	.meeting-jonathan {
+		flex-direction: column;
+	}
+	
+	.meeting-image {
+		margin: 0;
+	}
+	
+	/* register */
+	.register {
+		flex-direction: column;
+	}
+	
+	.register-convinced {
+		margin: 0;
+	}
+	
+	.register-action {
+		margin-bottom: 15px;
 	}
 	
 	/* footer */
