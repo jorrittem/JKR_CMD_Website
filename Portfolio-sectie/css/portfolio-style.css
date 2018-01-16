@@ -1,0 +1,59 @@
+html,body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "roboto","arial", "sans-serif";
+    
+}
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #4b4a4b;
+    
+    
+}
+
+.portfolio h2 {
+    text-align: center;
+    font-size: 18px;
+    color: #fefefe;
+    width: 100%
+    
+}
+
+.column {
+    width: 19%;
+    height: 30%;
+    margin: 2%;
+    padding: 1%;
+    background-color: #fefefe;
+    
+    
+}
+
+.column img {
+    width: 100%;
+    
+}
+
+.column iframe {
+    width: 100%;
+}
+
+.introtext {
+    font-weight: bold;
+    font-size: 14px;
+    
+}
+
+h3 {
+    padding-top: 0;
+}
+
+@media (max-width: 1023px) {
+	.column { 
+		width: 44%
+	}
+    
+   
+}
