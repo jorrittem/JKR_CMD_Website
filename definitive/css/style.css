@@ -78,9 +78,10 @@ a.active { /* style for the active page, border at the bottom and font color cha
 	width: 75%;
 }
 
+
+
 .topnav-menu a { /* style the links in the navbar */
 	color: #999;
-	display: inline-block; /* fixes links from ignoring parent height for padding */
 	font-size: 15px;
 	font-weight: bold;
 	margin-left: 1%;
@@ -88,6 +89,55 @@ a.active { /* style for the active page, border at the bottom and font color cha
 	padding: 14px 16px;
 	text-align: center;
 	text-decoration: none;
+}
+
+.topnav-hover-mobile{
+	display: none;
+}
+
+/*Hover Majors*/
+.dropdown{
+	overflow: hidden;
+}
+
+.dropdown .dropbtn{
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: bold;
+	border: none;
+	outline: none;
+	color: #999;
+	padding: 14px 16px;
+	background-color: inherit;
+}
+
+.dropbtn:hover{
+	border-bottom: 2px solid #ee7b00;
+	color: #ee7b00;
+}
+
+.dropdown-content{
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 3;
+}
+
+.dropdown-content a:hover{
+	background-color: #ddd;
+	border-bottom: 2px solid #ee7b00;
+	color: #ee7b00;
+}
+
+/*Takes care of the break in between the links in the dropdown menu*/
+.dropdown-content a{
+	display: block;
+}
+
+.dropdown:hover .dropdown-content{
+	display: block;
 }
 
 /* homepage content */
@@ -497,6 +547,10 @@ footer > div { /* selects all div elements where the parent is a footer element 
 		display: none;
 	}
 	
+	.dropbtn{
+		display: none;
+	}
+
 	.topnav {
 		text-align: left;	
 	}
@@ -516,6 +570,10 @@ footer > div { /* selects all div elements where the parent is a footer element 
 	
 	.topnav-menu {
 		display: block;
+	}
+
+	.topnav-menu a {
+		display: inline-block; /* fixes links from ignoring parent height for padding */
 	}
 	
 	.topnav-menu.responsive { /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
