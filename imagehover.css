@@ -3,6 +3,7 @@
   overflow: hidden;
 }
 
+/*Takes care of the hover animation*/
 .divImg .caption {
     height:100%;
     width: 100%;
@@ -17,11 +18,13 @@
 .effect1:hover .caption {
   transform: scaleY(1);
 }
+
 .caption-text h4{
 	text-transform: uppercase;
 	font-size: 24px;
 }
 
+/*Takes care of the border for the link to the majors when in hover*/
 .caption-text h5{
 	font-size: 15px;
 	display: inline-block;
@@ -33,12 +36,14 @@
 	padding: 15px;
 }
 
+/*Style for the link in the hover*/
 .caption-text a{
 	color: #ffffff;
 	text-decoration: none;
 
 }
 
+/*Style for the text in the hover*/
 .caption-text{
 	z-index: 5;
 	color: #fff;
@@ -48,6 +53,8 @@
     transform: translateY(-50%); 
     text-align: center;
 }
+
+/*Style for the overlay(Hover)*/
 .overlay {
 	background-color: #ee7f00;
 	height: 100%;
