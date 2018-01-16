@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- link to stylesheet -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		
+		<!-- link to font awesome -->
+		<link rel="stylesheet" href="files/font-awesome-4.7.0/css/font-awesome.min.css">
+		
+		<!-- utf-8 for special character compatibility -->
+		<meta charset="UTF-8">
+		
+		<!-- link to javascript -->
+		<script src="js/main.js"></script>
+		
+		<!-- link to favicon for tab -->
+		<link rel="icon" href="images/favicon.png" type="image/png" sizes="32x32">
+		
+		<!-- title of the page; found in tab -->
+		<title>Hanzehogeschool - Major Game	Design</title>
+	</head>
+	<body>
+		
+		<!-- contains user options -->
+		<div class="menunav">
+			<a class="menunav-hover" href="#Language">Language</a>
+			<a class="menunav-hover" href="#favoriet"><span class="fa fa-heart spacing-right"></span>Favoriet</a>
+			<a href="#search"><input class="spacing-left" type="text" name="search" placeholder="Search..."><span class="fa fa-search spacing-right"></span></a>
+			<a class="menunav-hover" href="#login"><span class="fa fa-user spacing-right"></span>login</a>
+		</div>
+
+		
+		<!-- contains logo and page links -->
+		<div class="topnav">
+			<div class="topnav-logo">
+				<img src="images/logo.png" alt="hanze logo">
+			</div>
+			<div class="topnav-menu" id="mytopnav">
+				<a class="topnav-hover" href="index.html">Home.</a>
+				
+				<!-- only displayed on mobile -->
+				<a class="topnav-hover-mobile topnav-hover active" href="major-gd">Game Design</a>
+				<a class="topnav-hover-mobile topnav-hover" href="major-id">Interaction Design</a>
+				<a class="topnav-hover-mobile topnav-hover" href="major-vd">Visual Design</a>
+
+				<!-- displayed on other devices -->
+				<div class="dropdown">
+					<button class="dropbtn">Majors <i class="fa fa-caret-down"></i></button>
+					<div id="myDropDown" class="dropdown-content">
+						<a class="active" href="major-gd.html">Game Design</a>	
+						<a href="major-id.html">Interaction Design</a>
+						<a href="major-vd.html">Visual Design</a>	
+					</div>
+				</div>
+				
+				<a class="topnav-hover" href="info.html">Praktische Info.</a>
+				<a class="topnav-hover" href="contact.html">Contact.</a>
+				
+				<!-- hamburger menu; only visible on mobile; uses main.js -->
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+			</div>
+		</div>
+
+		<!-- contains banner of homepage -->
+		<div class="headercontent major-gd">
+			<div class="cmd">
+				<p>CMD</p>
+				<h1>Communication & Multimedia Design</h1>
+			</div>  
+		</div>
+        
+		<!-- container for major interaction design -->
+		<div class="majors-content content-gd">
+			major test
+		</div>
+		
+		<!-- container for meeting -->
+		<div class="meeting">
+			<div class="meeting-intro">
+				<h3>Kennis Maken?</h3>
+				<p>Ben je enthousiast? Heb je vragen of advies nodig? Je kunt onze contactpersoon altijd bereiken.</p>
+			</div>
+			<div class="meeting-jonathan">
+				<div class="meeting-image">
+					<img src="images/jonathan.png" alt="Jonathan van Denzen">
+				</div>
+				<div class="meeting-contact">
+					<div class="align-left">
+						<h4>Jonathan van Denzen</h4>
+						<p>T (050) 595 25 86</p>
+						<p>E j.van.denzen@pl.hanze.nl</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- container for register -->
+		<div class="register">
+			<div class="register-convinced">
+				<p><span>of</span> ben je al overtuigd?</p>
+			</div>
+			<div class="register-action">
+				<a class="register-button" href="#">Aanmelden</a>
+			</div>
+		</div>
+		
+		<!-- universal html5 container for footer -->
+		<footer>
+		
+			<!-- contains hanze logo -->
+			<div class="footer-logo">
+				<img src="images/logo.png" alt="hanze logo">
+			</div>
+			
+			<!-- contains links to pages and sections -->
+			<div class="footer-links">
+				<ul>
+					<li><a href="#">Studeren.</a></li>
+					<li><a href="#">Studeren bij de Hanzehogeschool</a></li>
+					<li><a href="#">Opleidingen</a></li>
+					<li><a href="#">Minoren</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">Praktisch.</a></li>
+					<li><a href="#">Studie in cijfers</a></li>
+					<li><a href="#">Rooster</a></li>
+					<li><a href="#">Boekenlijst</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">Contact.</a></li>
+					<li><a href="#">Locaties</a></li>
+					<li><a href="#">Vacatures</a></li>
+					<li><a href="#">Alumni</a></li>
+				</ul>
+			</div>
+			
+			<!-- contains copyright -->
+			<div class="footer-copyright">
+				<p>Copyright © 2017 Hanzehogeschool Groningen</p>
+			</div>
+			
+			<!-- contains hanze quote -->
+			<div class="footer-quote">
+				<p>
+					<!-- orange colored text applied to span -->
+					<span>share</span> your talent <span>move</span> the world
+				</p>
+			</div>
+			
+			<!-- contains social media buttons -->
+			<div class="footer-social">
+			
+				<!-- icons applied to span -->
+				<a href="https://nl-nl.facebook.com/Hanzehogeschool/"><span class="fa fa-facebook"></span></a>
+				<a href="https://twitter.com/hanze"><span class="fa fa-twitter"></span></a>
+				<a href="https://www.youtube.com/user/hanzehogeschool"><span class="fa fa-youtube"></span></a>
+				<a href="https://nl.linkedin.com/edu/hanzehogeschool-groningen-15419"><span class="fa fa-linkedin"></span></a>
+				<a href="https://www.instagram.com/hanzehogeschool/"><span class="fa fa-instagram"></span></a>
+				<a href="https://www.snapchat.com/add/hanzestudents"><span class="fa fa-snapchat"></span></a>
+			</div>
+		</footer>
+	</body>
+</html>
