@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- link to stylesheet -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		
+		<!-- link to font awesome -->
+		<link rel="stylesheet" href="files/font-awesome-4.7.0/css/font-awesome.min.css">
+		
+		<!-- utf-8 for special character compatibility -->
+		<meta charset="UTF-8">
+		
+		<!-- link to favicon for tab -->
+		<link rel="icon" href="images/favicon.png" type="image/png" sizes="32x32">
+		
+		<!-- title of the page; found in tab -->
+		<title>Hanzehogeschool - Major Visual Design</title>
+	</head>
+	<body>
+		
+		<!-- contains user options -->
+		<div class="menunav">
+			<a class="menunav-hover" href="#Language">Language</a>
+			<a class="menunav-hover" href="#favoriet"><span class="fa fa-heart spacing-right"></span>Favoriet</a>
+			<a href="#search"><input class="spacing-left" type="text" name="search" placeholder="Search..."><span class="fa fa-search spacing-right"></span></a>
+			<a class="menunav-hover" href="#login"><span class="fa fa-user spacing-right"></span>login</a>
+		</div>
+
+		
+		<!-- contains logo and page links -->
+		<div class="topnav">
+			<div class="topnav-logo">
+				<img src="images/logo.png" alt="hanze logo">
+			</div>
+			<div class="topnav-menu" id="mytopnav">
+				<a class="topnav-hover" href="index.html">Home.</a>
+				
+				<!-- only displayed on mobile -->
+				<a class="topnav-hover-mobile topnav-hover" href="major-gd.html">Game Design</a>
+				<a class="topnav-hover-mobile topnav-hover" href="major-id.html">Interaction Design</a>
+				<a class="topnav-hover-mobile topnav-hover active"" href="major-vd.html">Visual Design</a>
+
+				<!-- displayed on other devices -->
+				<div class="dropdown">
+					<button class="dropbtn">Majors <i class="fa fa-caret-down"></i></button>
+					<div id="myDropDown" class="dropdown-content">
+						<a href="major-gd.html">Game Design</a>	
+						<a href="major-id.html">Interaction Design</a>
+						<a class="active" href="major-vd.html">Visual Design</a>	
+					</div>
+				</div>
+				
+				<a class="topnav-hover" href="info.html">Praktische Info.</a>
+				<a class="topnav-hover" href="contact.html">Contact.</a>
+				
+				<!-- hamburger menu; only visible on mobile; uses main.js -->
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+			</div>
+		</div>
+
+		<!-- contains banner of homepage -->
+		<div class="headercontent major-vd">
+			<div class="cmd">
+				<p class="button">Major</p>
+				<h1>Visual Design</h1>
+				<p class="description">“In de major Visual Design richt je je op het bedenken en ontwerpen van interactieve producten en belevingen. Wat maakt communicatie effectief?”</p>
+			</div>  
+		</div>
+        
+		<!-- container for intro -->
+		<div class="majors-content">
+			<div class="intro-text">
+				<h2>Visual Design</h2>
+				<p>In de major <a href="major-vd.html">Visual Design</a> richt je je op het bedenken en ontwerpen van interactieve producten en belevingen. Wat maakt communicatie effectief? Hoe kunnen we mensen motiveren om hun gedrag te veranderen? </p>
+				<p>Het bedenken en visualiseren van crossmediale design-, merk- en interactieve mediaconcepten is het terrein van een professional op het gebied van Visual Design. Het zijn de creatieve denkers die met prikkelende ideeën komen.</p>
+			</div>
+			<div class="intro-image">
+				<img src="images/intro-image-vd.png" alt="Major Info">
+			</div>
+		</div>
+		
+		<!-- container for admission requirements -->
+		
+		<!-- container for structure education -->
+		<div class="major-structure">
+			<h2>Opbouw Opleiding</h2>
+			
+			<!-- Tab links -->
+			<div class="tab-bar">
+				<button id="button1" class="tab-button" onclick="openYear('year1', '0')">Propedeuse jaar</button>
+				<button id="button2" class="tab-button" onclick="openYear('year2', '1')">Na het eerste jaar</button>
+				<button id="button3" class="tab-button" onclick="openYear('year3', '2')">Het derde jaar</button>
+				<button id="button4" class="tab-button" onclick="openYear('year4', '3')">Afstudeer jaar</button>
+			</div>
+
+			<!-- Tab content -->
+			<div id="year1" class="year">
+				<div class="tab-left">
+					<span class="label">Oriënterend</span>
+					<h3>Propedeuse jaar</h3>
+					<p>In het eerste jaar maak je kennis met alle richtingen (majors) van de opleiding en leg je een brede basis binnen het creatief technologische domein.</p>
+					<h4>Kernvakken</h4>
+					<p><span>Design Theory</span><span>Design Tools</span><span> Design Research</span><span>Design Tools</span><span>Design Thinking</span><span>Business Model Innovation</span></p>
+				</div>
+				
+				<div class="tab-right tab-1">
+				</div>
+			</div>
+
+			<div id="year2" class="year">
+				<div class="tab-left">
+					<h3>Na het eerste jaar</h3>
+					<p>Na het eerste jaar specialiseer je je in een van de majors. Je volgt vakken en doet projecten die passen bij de richting die je gekozen hebt. Je werkt veel in projectgroepen en doet opdrachten voor echte opdrachtgevers. In het derde jaar ga je een half jaar op stage en daarnaast kun je bijvoorbeeld een minor volgen of studeren in het buitenland.</p>
+				</div>
+				
+				<div class="tab-right tab-2">
+				</div>
+			</div>
+
+			<div id="year3" class="year">
+				<div class="tab-left">
+					<h3>Het derde jaar</h3>
+					<p>Je derde jaar start met een half jaar durende praktijkstage, waarbij je zelf kiest of je je stage in binnen- of buitenland wilt doen. Naast de dagelijkse werkzaamheden werk je aan een specifieke opdracht. Je kunt zelf een stageplaats zoeken, maar ook de opleiding heeft een groot aanbod van stageadressen waar je uit kunt kiezen.</p>
+					<p>Na je half jaar stage ga je aan de slag met je minor. Heb jij een brede interesse en wil je je graag ontwikkelen op een bepaald gebied? Dan kun je met ons breed aanbod aan minoren en keuzevakken zeker uit te voeten! Je kunt er bijvoorbeeld voor kiezen om onze major game on te volgen, of Da-Vinci of doel(groep)gerichte communicatie. Natuurlijk kun je je minor ook vullen met een pre-master of ervoor kiezen om een half jaar te gaan studeren in het buitenland. Er zijn volop mogelijkheden!</p>
+				</div>
+				
+				<div class="tab-right tab-3">
+				</div>
+			</div>
+
+			<div id="year4" class="year">
+				<div class="tab-left">
+					<h3>Afstudeer jaar</h3>
+					<p>Centraal in het vierde jaar staat de afstudeeropdracht. Je gaat op zoek naar een creatieve oplossing voor een complex vraagstuk met behulp van interactieve media. Ook in het 4de jaar ga je een half jaar op stage. Tijdens deze stage doe je je afstudeeropdracht.</p>
+				</div>
+				
+				<div class="tab-right tab-4">
+				</div>
+			</div>
+		</div>
+		
+		<!-- container for quote -->
+		<div class="major-quote">
+			<span class="fa fa-quote-left"></span>
+			<p class="quote">“Ik vind het geweldig als studenten beter worden dan ik!”</p>
+			<h4>LOES DAMHOF</h4>
+			<p class="quote-title">Docent Communication & Multimedia Design</p>
+		</div>
+		
+		<!-- container for career opportunities -->
+		<div class="major-career career-vd">
+			<div class="career-description">
+				<h2>Carrière Mogelijkheden</h2>
+				<p>Voorbeelden van functies waarin je aan de slag kan zijn: experience designer, multimedia designer, creatief concepter, visual designer, junior art director of junior brand- en design manager. Je bent in staat snel in te spelen op veranderingen binnen de creatieve industrie, het bedrijfsleven of bij de overheid. De beroepsmogelijkheden zullen de komende jaren alleen nog maar vergroten.</p>
+			</div>
+		</div>
+		
+		<!-- container for portfolio -->
+		<div class="portfolio">
+
+			<h2>Portfolio</h2>
+
+			<div class="column">
+				<img src="images/frog.jpg" alt="Geilustreerde kikker">
+				<h3>Interactieve film UMCG</h3>
+				<p class="introtext">Video | Tweede jaar | Visual Design</p>
+				<p>Het interactieve filmpje is gemaakt voor het Centrum voor Revalidatie van het UMCG voor kinderen tussen de 3 en de 5 jaar. 
+				Niet alleen de kinderen zijn de doelgroep, maar hun ouders spelen ook een rol tijdens het revalidatieproces. 
+				Het filmpje kan ingesproken worden door de ouders, zodat de kinderen het filmpje op een vertrouwde manier kennis kunnen maken met het ziekenhuisbezoek.</p>
+				<iframe src="https://www.youtube.com/embed/fNUBk6XGKBM" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			</div>
+			<div class="column">
+				<img src="images/cantina.jpg" alt="Cantina poster">
+				<h3>Cantina Mexicana</h3>
+				<p class="introtext">Poster | Tweede jaar | Visual Design</p>
+				<p>In het tweede jaar werd een campagne ontworpen voor Cantina Mexicana. Cantina Mexicana, een Mexicaans restaurant aan de Vismarkt in Groningen, zag een terugloop in het aantal gasten. Het was aan de studenten om een crossmediale experience te bedenken en te visualiseren. Deze werd gepresenteerd aan de opdrachtgever.</p>
+				<img src="images/cantina-2.jpg" alt="Cantina poster 2">
+			</div>
+			<div class="column">
+				<img src="images/magical-maze.jpg" alt="Maze poster">
+				<h3>Magical Maze</h3>
+				<p class="introtext" >Video | Tweede jaar | Game Design</p>
+				<p>In het spel Magical Maze moet de speler binnen de tijd de uitgang vinden van een doolhof. Het doolhof werkt de speler echter tegen door tijdens het spelen verschillende vallen te plaatsen.</p>
+				<img src="images/concept-art-2.jpg" alt="Concept art for Magical Maze.">
+				<iframe src="https://player.vimeo.com/video/206386765" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			</div>
+			<div class="column">
+				<img src="images/welcome-village.jpg" alt="Welcome to the village website">
+				<h3>Festival website</h3>
+				<p class="introtext">Website | Eerste jaar | Interaction Design</p>
+				<img src="images/desktop-line-up.jpg" alt="Desktop with line up page on it.">
+				<img src="images/desktop-contact.jpg" alt="Desktop with contact page on it.">
+				<img src="images/mobile-home.jpg" alt="Mobile with home page on it.">
+				<img src="images/mobile-volunteer.jpg" alt="Mobile version of the vrijwilligers page.">
+			</div>
+			<div class="column">
+				<img src="images/studio205.jpg" alt="Studio 205">
+				<h3>Making of.. Cantina Mexicana</h3>
+				<p class="introtext">Video | Tweede jaar | Visual Design</p>
+				<iframe src="https://player.vimeo.com/video/206392115" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			</div>
+		</div>
+		
+		<!-- container for meeting -->
+		<div class="meeting">
+			<div class="meeting-intro">
+				<h3>Kennis Maken?</h3>
+				<p>Ben je enthousiast? Heb je vragen of advies nodig? Je kunt onze contactpersoon altijd bereiken.</p>
+			</div>
+			<div class="meeting-jonathan">
+				<div class="meeting-image">
+					<img src="images/jonathan.png" alt="Jonathan van Denzen">
+				</div>
+				<div class="meeting-contact">
+					<div class="align-left">
+						<h4>Jonathan van Denzen</h4>
+						<p>T (050) 595 25 86</p>
+						<p>E j.van.denzen@pl.hanze.nl</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- container for register -->
+		<div class="register">
+			<div class="register-convinced">
+				<p><span>of</span> ben je al overtuigd?</p>
+			</div>
+			<div class="register-action">
+				<a class="register-button" href="#">Aanmelden</a>
+			</div>
+		</div>
+		
+		<!-- universal html5 container for footer -->
+		<footer>
+		
+			<!-- contains hanze logo -->
+			<div class="footer-logo">
+				<img src="images/logo.png" alt="hanze logo">
+			</div>
+			
+			<!-- contains links to pages and sections -->
+			<div class="footer-links">
+				<ul>
+					<li><a href="#">Studeren.</a></li>
+					<li><a href="#">Studeren bij de Hanzehogeschool</a></li>
+					<li><a href="#">Opleidingen</a></li>
+					<li><a href="#">Minoren</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">Praktisch.</a></li>
+					<li><a href="#">Studie in cijfers</a></li>
+					<li><a href="#">Rooster</a></li>
+					<li><a href="#">Boekenlijst</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">Contact.</a></li>
+					<li><a href="#">Locaties</a></li>
+					<li><a href="#">Vacatures</a></li>
+					<li><a href="#">Alumni</a></li>
+				</ul>
+			</div>
+			
+			<!-- contains copyright -->
+			<div class="footer-copyright">
+				<p>Copyright © 2017 Hanzehogeschool Groningen</p>
+			</div>
+			
+			<!-- contains hanze quote -->
+			<div class="footer-quote">
+				<p>
+					<!-- orange colored text applied to span -->
+					<span>share</span> your talent <span>move</span> the world
+				</p>
+			</div>
+			
+			<!-- contains social media buttons -->
+			<div class="footer-social">
+			
+				<!-- icons applied to span -->
+				<a href="https://nl-nl.facebook.com/Hanzehogeschool/"><span class="fa fa-facebook"></span></a>
+				<a href="https://twitter.com/hanze"><span class="fa fa-twitter"></span></a>
+				<a href="https://www.youtube.com/user/hanzehogeschool"><span class="fa fa-youtube"></span></a>
+				<a href="https://nl.linkedin.com/edu/hanzehogeschool-groningen-15419"><span class="fa fa-linkedin"></span></a>
+				<a href="https://www.instagram.com/hanzehogeschool/"><span class="fa fa-instagram"></span></a>
+				<a href="https://www.snapchat.com/add/hanzestudents"><span class="fa fa-snapchat"></span></a>
+			</div>
+		</footer>
+		
+		<!-- link to javascript -->
+		<script src="js/main.js"></script>
+	</body>
+</html>
