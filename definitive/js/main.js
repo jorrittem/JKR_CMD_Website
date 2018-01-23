@@ -9,6 +9,8 @@ function myFunction() { //Create a function, toggles between adding and removing
 
 }
 
+document.getElementById("id").style.display = "block";
+
 // structure education
 document.getElementById("button1").click(); // auto click first tab on page load to activate by default
 
@@ -27,7 +29,6 @@ function openYear(year, value) { // function to change active tab
 	y[value].className += " tab-active"; // add active class tab
 }
 
-document.getElementsByClassName("tabcontent").style.display = "block";
 
 
 function openMajor(evt, majorName) {
