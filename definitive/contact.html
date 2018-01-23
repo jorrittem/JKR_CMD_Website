@@ -61,14 +61,16 @@
 		<!-- contains banner -->
 		<div class="headercontent contact">
 			<div class="cmd">
-				<p class="button">CMD</p>
-				<h1>Communication & Multimedia Design</h1>
+				<p class="button">Tot snel!</p>
+				<h1>Contact</h1>
+				<p class="description">Kom je ook langs? Breng een bezoek aan Hanzehogeschool. Vind onze openingstijden & locaties hieronder.</p>
 			</div>  
 		</div>
         
 		<!-- container for intro -->
 		<div class="contact-content">
-						<!--Div for both content divs, this for the flexbox-->
+		
+			<!--Div for both content divs, this for the flexbox-->
 			<div class="main-info">
 
 					<!--First content div, containt adres info-->
@@ -125,16 +127,16 @@
 			</div>
 			
 			<!--Shows the google maps-->
-			<div class="googlemaps">
+			<div class="google-maps">
 				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3376.8010204796583!2d6.53775516566904!3d53.240098103399916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1snl!2snl!4v1516623051650" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
 			</div>
 		</div>
 
 		<!--Ask a Student Feature, first div is the container-->
-		<div class="Main">
+		<div class="main">
 
 			<!--The Info div-->
-			<div class="MainInfo">
+			<div class="main-info2">
 				<h2>Vraag een student</h2>
 				<p>
 					Hieronder staan een aantal studenten, elke student heeft een andere major gekozen. 
@@ -144,30 +146,30 @@
 			</div>
 
 			<!--The div that contains the button for the tab-->
-			<div class="Tabs">
-				<button class="tablinks" onclick="openMajor(event, 'id')">Interaction Design <span class="fa fa-mobile"></span></button>
-	  			<button class="tablinks" onclick="openMajor(event, 'vd')">Visual Design <span  class="fa fa-paint-brush"></span></button>
-	  			<button class="tablinks" onclick="openMajor(event, 'gd')">Game Design <span class="fa fa-gamepad"></span></button>
+			<div class="tabs">
+				<button class="tab-links" onclick="openMajor(event, 'id')">Interaction Design <span class="fa fa-mobile"></span></button>
+	  			<button class="tab-links" onclick="openMajor(event, 'vd')">Visual Design <span  class="fa fa-paint-brush"></span></button>
+	  			<button class="tab-links" onclick="openMajor(event, 'gd')">Game Design <span class="fa fa-gamepad"></span></button>
 			</div>
 		</div>
 
 		<!--These three divs contains the info for the marjors for each tab-->
 		<!--First div is interaction Design-->
-		<div id="id" class="tabcontent">
+		<div id="id" class="tab-content">
 
 			<!--Container for the two main divs for each tab-->			
-			<div class="tabinfocontainer">
+			<div class="tab-info-container">
 
 				<!--Container for the information of the person for each tab-->
-				<div class="personinfo">
+				<div class="person-info">
 
 					<!--Div for the image-->
-					<div class="profilepicture">
+					<div class="profile-picture">
 						<img src="images/askastudent.jpg">
 					</div>
 
 					<!--Div for the information of the person-->
-					<div class="profileinfo">
+					<div class="profile-info">
 						<h2>Jorrit</h2>
 						<table>
 							<tr>
@@ -191,9 +193,9 @@
 				</div>
 
 				<!--Container for the form for each tab-->
-				<div class="askastudentform">
+				<div class="ask-a-student-form">
 					<h2>Contact</h2>	
-					<div class="studentform">
+					<div class="student-form">
 					<form action="mailto:j.tempels7@gmail.com" method="post" enctype="text/plain">	
 					<label>Naam: </label>
 					<input type="text" placeholder="Naam" id="fname">
@@ -209,12 +211,12 @@
 		</div>
 	
 		<!--Second div is for visual design-->
-		<div id="vd" class="tabcontent">
+		<div id="vd" class="tab-content">
 			<h2>Ik ben VD</h2>
 		</div>
 
 		<!--Third div is for game design-->
-		<div id="gd" class="tabcontent">
+		<div id="gd" class="tab-content">
 			<h2>Ik ben GD</h2>
 		</div>
 
@@ -308,5 +310,6 @@
 		
 		<!-- link to javascript -->
 		<script src="js/main.js"></script>
+		<script src="js/contact.js"></script>
 	</body>
 </html>
