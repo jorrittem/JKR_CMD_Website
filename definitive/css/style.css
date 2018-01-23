@@ -578,6 +578,157 @@ h1, h2, h3, h4, h5, h6 {
 /* info content */
 
 /* contact content */
+.contact-content{
+	display: flex;
+}
+
+.main-info{
+	display: flex;
+	flex-direction: column;
+}
+
+.padding-class{
+	padding: 5%;
+	padding-left: 15%;
+}
+
+.padding-class h3{
+	font-size: 25px;
+	font-style: normal;
+}
+
+.padding-class p{
+	font-size: 17px;
+}
+
+table{
+	display: inline-block;
+	padding-left: 5%;
+	font-size: 17px;
+}
+.adres-info{
+	flex: 1;
+	background-color: #6848e1;
+	color: #ffffff;
+}
+
+.map-info{
+	flex: 1;
+}
+
+.googlemaps iframe{
+	width: 1000px;
+	height: 650px;
+	display: block;
+}
+
+
+.Main{
+	display: flex;
+	color: white;
+}
+
+.MainInfo{
+	flex: 1;
+	padding: 2%;
+	background-color: #6848e1;
+}
+
+.Tabs{
+	flex: 1;
+	display: flex;
+	background-color: blue;	 
+}
+
+/*Style for the buttons that are used to open the tab content*/
+.Tabs button{
+	flex: 1;
+	background-color: #303030;
+	color: white;
+	font-size: 30px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+/*Change background color for the hover of the buttons*/
+.Tabs button:hover{
+	background-color: #ee7b00;
+}
+
+/*Create an active tablink class*/
+.Tabs button.active{
+	background-color: #ee7b00;
+}
+
+/*Style for the tab content*/
+.tabcontent{
+	display: none;
+	padding: 6px 12px;
+	border-top: none;
+}
+
+.tabinfocontainer{
+	display: flex;
+}
+
+.personinfo{
+	flex: 1;
+	display: flex;
+}
+
+.profileinfo{
+	flex: 1;
+	padding: 2%;
+}
+
+.askastudentform{
+	flex: 1;
+}
+
+.askastudentform h2{
+	text-align: center;
+}
+
+.studentform{
+	width: 350px;
+	padding-left: 25%;
+	color:#333;
+}
+
+.studentform label{
+	font-size:15px;
+	font-weight:700
+}
+
+input#fname{
+	margin-top:10px;
+	margin-bottom:10px;
+	padding-left:35px;
+	width:77%;
+	height:30px;
+	font-size:14px;
+}
+
+input#email{
+	margin-top:10px;
+	margin-bottom:10px;
+	padding-left:35px;
+	width:77%;
+	height:30px;
+	font-size:14px;
+}
+
+textarea{
+	margin-top:10px;
+	margin-bottom:10px;
+	padding-left:35px;
+	width:77%;
+	height:50px;
+	font-size:14px;
+	resize: none;
+}
 
 /* meeting */
 .meeting {
@@ -919,4 +1070,37 @@ footer > div { /* selects all div elements where the parent is a footer element 
 	.footer-social {
 		display: none;
 	}
+	
+		/*Contact content*/
+	.contact-content{
+		flex-direction: column;
+	}
+
+	.googlemaps iframe{
+		padding: 5%;
+		width: 325px;
+		height: 375px;
+	}
+
+	.Tabs button{
+		font-size: 21px;
+		padding: 5%
+	}
+
+	.Main{
+		flex-direction: column;
+	}
+
+	.tabinfocontainer{
+		flex-direction: column;
+	}
+
+	.personinfo{
+		flex-direction: column;
+	}
+
+	.studentform{
+		padding-left: 0%;
+	}
+
 }

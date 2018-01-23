@@ -68,7 +68,152 @@
         
 		<!-- container for intro -->
 		<div class="contact-content">
-			contact test
+						<!--Div for both content divs, this for the flexbox-->
+			<div class="main-info">
+
+					<!--First content div, containt adres info-->
+					<div class="adres-info">
+
+						<!--Add padding class for the two content divs, this for centering the content of both divs-->
+						<div class="padding-class">
+							<h3>Bezoek adres</h3>
+							<p>
+								Zernikeplein 11<br>
+								9747 AS Groningen<br>
+								(050) 595 45 000
+							</p>
+
+							<h3>Openingstijden</h3>
+
+							<!--Table for an overview of the times, created two tables for placing one next to the other-->
+							<table>
+								<tr>
+									<td>Maandag</td>
+									<td> 07.30 - 22.15</td>	
+								</tr>
+								<tr>
+									<td>Dinsdag</td>
+									<td> 07.30 - 22.15</td>
+								</tr>
+									<td>Woensdag</td>
+									<td> 07.30 - 22.15</td>
+							</table>
+							<table>
+								<tr>
+									<td>Donderdag</td>
+									<td> 07.30 - 22.15</td>	
+								</tr>
+								<tr>
+									<td>Vrijdag</td>
+									<td> 07.30 - 17.30</td>
+								</tr>
+									<td>Weekend</td>
+									<td> gesloten</td>
+							</table>
+						</div>
+					</div>
+				
+				<!--Shows the info about the map-->
+				<div class="map-info">
+					<div class="padding-class">
+						<h3>Plattegrond</h3>
+						<p>Eerste jaars student? klik op de button en je krijgt een overzicht van de campus. Zodat je weet waar je college te volgen is.</p>
+						<a class="register-button" href="#">Bekijk Campus</a>
+					</div>
+
+				</div>
+			</div>
+			
+			<!--Shows the google maps-->
+			<div class="googlemaps">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3376.8010204796583!2d6.53775516566904!3d53.240098103399916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1snl!2snl!4v1516623051650" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+		</div>
+
+		<!--Ask a Student Feature, first div is the container-->
+		<div class="Main">
+
+			<!--The Info div-->
+			<div class="MainInfo">
+				<h2>Vraag een student</h2>
+				<p>
+					Hieronder staan een aantal studenten, elke student heeft een andere major gekozen. 
+					Wees niet bang en stuur ze een vraag! Elke vraag zal binnen 24 uur worden beantwoord door de student van jou keuze!
+					Wil je liever persoonlijk met de studenten spreken kom dan naar de open dag, of regel hier een meeloopdag!
+				</p>
+			</div>
+
+			<!--The div that contains the button for the tab-->
+			<div class="Tabs">
+				<button class="tablinks" onclick="openMajor(event, 'id')">Interaction Design</button>
+	  			<button class="tablinks" onclick="openMajor(event, 'vd')">Visual Design</button>
+	  			<button class="tablinks" onclick="openMajor(event, 'gd')">Game Design</button>
+			</div>
+		</div>
+
+		<!--These three divs contains the info for the marjors for each tab-->
+		<!--First div is interaction Design-->
+		<div id="id" class="tabcontent">
+
+			<!--Container for the two main divs for each tab-->			
+			<div class="tabinfocontainer">
+
+				<!--Container for the information of the person for each tab-->
+				<div class="personinfo">
+
+					<!--Div for the image-->
+					<div class="profilepicture">
+						<img src="images/askastudent.jpg">
+					</div>
+
+					<!--Div for the information of the person-->
+					<div class="profileinfo">
+						<h2>Jorrit</h2>
+						<table>
+							<tr>
+								<td>Naam: </td>
+								<td> Jorrit Tempels</td>
+							</tr>
+							<tr>
+								<td>Leeftijd: </td>
+								<td> 21</td>
+							</tr>
+						</table>
+						<p>
+							Hoi! Ik ben Jorrit tweede jaars student Communication and Multimedia Design.
+							Ik heb gekozen voor de major Interaction Design. Ik heb deze major gekozen omdat dit echt bij mij past.
+							Ik ben graag bezig met websites maken, ik vind het heel leuk om te leren hoe je online dingen moet maken.
+
+							Heb jij vragen voor mij? Wees niet bang en stuur ze naar mij! 
+							Dit kan ingevuld worden in het formulier hier naast.
+						</p>
+					</div>
+				</div>
+
+				<!--Container for the form for each tab-->
+				<div class="askastudentform">
+					<h2>Contact</h2>	
+					<div class="studentform">
+					<form action="mailto:j.tempels7@gmail.com" method="post" enctype="text/plain">	
+					<label>Naam: </label>
+					<input type="text" placeholder="Naam" id="fname">
+					<label>Email: </label>
+					<input type="text" placeholder="Email" id="email">
+					<label>Vraag: </label>
+					<textarea rows="10" cols="50" placeholder="Stel hier je vraag" id="Question"></textarea>
+					<input class="register-button" type="reset" value="Verstuur!" id="submit">
+					</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<!--Second div is for visual design-->
+		<div id="vd" class="tabcontent"></div>
+
+		<!--Third div is for game design-->
+		<div id="gd" class="tabcontent"></div>
+		
 		</div>
 		
 		<!-- container for meeting -->
