@@ -27,6 +27,8 @@ function openYear(year, value) { // function to change active tab
 	y[value].className += " tab-active"; // add active class tab
 }
 
+document.getElementById("test").click();
+
 function openMajor(evt, majorName) {
     var i, tabcontent, tablinks;
 

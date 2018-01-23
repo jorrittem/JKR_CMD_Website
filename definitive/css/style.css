@@ -652,6 +652,11 @@ table{
 	transition: 0.3s;
 }
 
+.tablinks .fa{
+	display: block;
+	color: red;
+}
+
 /*Change background color for the hover of the buttons*/
 .Tabs button:hover{
 	background-color: #ee7b00;
