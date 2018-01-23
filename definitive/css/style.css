@@ -781,6 +781,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .register-button {
 	background-color: #6848e1; /* purple */
+	border: none; /* remove standard button border */
 	border-radius: 20px; /* rounded edges */
 	color: #fff; /* white */
 	padding: 5px 15px;
