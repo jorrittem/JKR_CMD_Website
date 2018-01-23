@@ -617,6 +617,7 @@ h1, h2, h3, h4, h5, h6 {
 	width: 100%;
 }
 .video iframe {
+	border: 0; /* remove standard iframe border */
 	height: 100%;
 	width: 100%;
 }
