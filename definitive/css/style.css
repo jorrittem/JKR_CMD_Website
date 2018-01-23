@@ -661,7 +661,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .padding-class {
 	padding: 5%;
-	padding-left: 15%;
+	padding-left: 13%;
 }
 
 .padding-class h3 {
@@ -670,14 +670,38 @@ h1, h2, h3, h4, h5, h6 {
 	font-style: normal;
 }
 
+.map-info h3 {
+	color: #000000; /* white */
+	font-size: 25px;
+	font-style: normal;
+}
+
 .padding-class p {
 	font-size: 17px;
 }
 
-.profile-info table {
-	display: inline-block;
+.phoneandemails{
+	float: right;
+	padding-bottom: 5%;
+}
+
+.tabletitle{
+	font-weight: bold;
 	font-size: 17px;
-	padding-left: 5%;
+	padding-bottom: 2%;
+}
+
+.tabletext{
+	font-size: 15px;
+}
+
+.colororange{
+	color: orange;
+	font-weight: bold;
+}
+
+.tablepadding{
+	padding-bottom: 2%;
 }
 
 .adres-info {
@@ -691,9 +715,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .google-maps iframe{
-	width: 1000px;
-	height: 650px;
 	display: block;
+	height: 100%;
+	width: 1150px;
 }
 
 
@@ -712,10 +736,23 @@ h1, h2, h3, h4, h5, h6 {
 	color: #fff; /* white */
 }
 
+.main-info2 p{
+	font-size: 17px;
+}
+
+.black-button{
+	background-color: #000000; /* purple */
+	border: none; /* remove standard button border */
+	border-radius: 20px; /* rounded edges */
+	color: #fff; /* white */
+	padding: 5px 15px;
+	text-decoration: none; /* remove default underline */
+	float: right;
+}
+
 .tabs {
 	flex: 1;
-	display: flex;
-	background-color: blue;	 
+	display: flex; 
 }
 
 /*Style for the buttons that are used to open the tab content*/
@@ -732,6 +769,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .tab-links .fa {
 	display: block;
+	color: #303030;
 }
 
 .tabs button:hover { /* change background color for the hover of the buttons */
@@ -755,6 +793,18 @@ h1, h2, h3, h4, h5, h6 {
 .person-info {	
 	display: flex;
 	flex: 1;
+	font-size: 17px;
+	color: #303030;
+}
+
+.profile-info h2{
+	font-size: 30px;
+	color: #ee7b00;
+}
+
+.profile-info p{
+	font-size: 17px;
+	color: #000000;
 }
 
 .profile-info {
@@ -766,8 +816,9 @@ h1, h2, h3, h4, h5, h6 {
 	flex: 1;
 }
 
-.ask-a-student-form h2 {
-	text-align: center;
+.student-form h2 {
+	font-size: 30px;
+	color: #ee7b00;
 }
 
 .student-form {
@@ -782,8 +833,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .student-form input#fname,
-.student-form input#email,
-.student-form textarea {
+.student-form input#email{
 	width:77%;
 	height:30px;
 	font-size:14px;
@@ -791,6 +841,19 @@ h1, h2, h3, h4, h5, h6 {
 	margin-top:10px;
 	padding-left:35px;
 	resize: none;
+}
+.student-form textarea {
+	width:77%;
+	height:50px;
+	font-size:14px;
+	margin-bottom:10px;
+	margin-top:10px;
+	padding-left:35px;
+	resize: none;
+}
+
+.floatright{
+	float: right;
 }
 
 /* meeting */

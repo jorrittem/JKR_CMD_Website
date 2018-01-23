@@ -75,15 +75,36 @@
 
 					<!--First content div, containt adres info-->
 					<div class="adres-info">
-
+						
 						<!--Add padding class for the two content divs, this for centering the content of both divs-->
 						<div class="padding-class">
-							<h3>Bezoek adres</h3>
-							<p>
-								Zernikeplein 11<br>
-								9747 AS Groningen<br>
-								(050) 595 45 000
-							</p>
+
+							<!--Diverent div for floating right-->
+							<div class="phoneandemails">
+								<h3>Telefoon</h3>
+								<table>
+									<tr><td class="tabletitle">Hanzehogeschool</td></tr>
+									<tr><td class="tabletext"><span class="colororange">T: </span> 050 - 595 55 55</td></tr>
+									<tr><td class="tabletext"><span class="colororange">F: </span> 050 - 571 06 34</td></tr>
+									<tr><td class="tabletext tablepadding"><span class="colororange">E: </span> info@org.hanze.nl</td></tr>
+
+									<tr><td class="tabletitle">Frontoffice instituut Communicatie, Media & IT</td></tr>
+									<tr><td class="tabletext"><span class="colororange">T: </span> 050 - 595 77 44</td></tr>
+									<tr><td class="tabletext tablepadding"><span class="colororange">E: </span> frontofficecmi@org.hanze.nl</td></tr>
+
+									<tr><td class="tabletitle">Contactpersoon CMD Jonathan van Denzen</td></tr>
+									<tr><td class="tabletext"><span class="colororange">T: </span> 050 - 595 25 86</td></tr>
+									<tr><td class="tabletext tablepadding"><span class="colororange">E: </span> j.van.denzen@pl.hanze.nl</td></tr>
+								</table>
+							</div>
+
+							<h3>Bezoekadres</h3>
+							<table>
+								<tr><td class="tabletitle">Instituut voor Communicatie, Media & IT</td></tr>
+								<tr><td class="tabletext">Van DoorenVeste (gebouw <span class="colororange">M</span>)</td></tr>
+								<tr><td class="tabletext">Zernikeplein 11</td></tr>
+								<tr><td class="tabletext">9747 AS Groningen</td></tr>
+							</table>
 
 							<h3>Openingstijden</h3>
 
@@ -114,7 +135,7 @@
 									<td> gesloten</td>
 								</tr>
 							</table>
-						</div>
+						</div>					
 					</div>
 				
 				<!--Shows the info about the map-->
@@ -139,12 +160,14 @@
 
 			<!--The Info div-->
 			<div class="main-info2">
-				<h2>Vraag een student</h2>
+				<h2>Vraag een student!</h2>
 				<p>
-					Hieronder staan een aantal studenten, elke student heeft een andere major gekozen. 
+					Heb jij nou vragen voor de studenten in plaats van de leraren?
+					Hiernaast staan de 3 majors van elke opleiding. Als je op een major klikt kun je een profiel zien van een student die deze major volgt! 
 					Wees niet bang en stuur ze een vraag! Elke vraag zal binnen 24 uur worden beantwoord door de student van jou keuze!
 					Wil je liever persoonlijk met de studenten spreken kom dan naar de open dag, of regel hier een meeloopdag!
 				</p>
+					<a class="black-button" href="#">Meeloopdag</a>
 			</div>
 
 			<!--The div that contains the button for the tab-->
@@ -175,18 +198,82 @@
 						<h2>Jorrit</h2>
 						<table>
 							<tr>
-								<td>Naam: </td>
-								<td> Jorrit Tempels</td>
+								<td class="tabletitle">Naam: </td>
+								<td class="tabletext"> Jorrit Tempels</td>
 							</tr>
 							<tr>
-								<td>Leeftijd: </td>
-								<td> 21</td>
+								<td class="tabletitle">Leeftijd: </td>
+								<td class="tabletext"> 21</td>
+							</tr>
+							<tr>
+								<td class="tabletitle">Woonplaats: </td>
+								<td class="tabletext"> Groningen <span class="fa fa-home "></span></td>
 							</tr>
 						</table>
 						<p>
 							Hoi! Ik ben Jorrit tweede jaars student Communication and Multimedia Design.
 							Ik heb gekozen voor de major Interaction Design. Ik heb deze major gekozen omdat dit echt bij mij past.
 							Ik ben graag bezig met websites maken, ik vind het heel leuk om te leren hoe je online dingen moet maken.
+
+							Heb jij vragen voor mij? Schroom dan niet en stuur ze naar mij! 
+							Dit kan ingevuld worden in het formulier hier naast.
+						</p>
+					</div>
+				</div>
+
+				<!--Container for the form for each tab-->
+				<div class="ask-a-student-form">	
+					<div class="student-form">
+						<h2>Contact</h2>	
+						<form action="mailto:j.tempels7@gmail.com" method="post" enctype="text/plain">	
+						<label>Naam: </label>
+						<input type="text" placeholder="Naam" id="fname">
+						<label>Email: </label>
+						<input type="text" placeholder="Email" id="email">
+						<label>Vraag: </label>
+						<textarea rows="10" cols="50" placeholder="Stel hier je vraag" id="Question"></textarea>
+						<input class="register-button floatright" type="reset" value="Verstuur!" id="submit">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<!--Second div is for visual design-->
+		<div id="vd" class="tab-content">
+			
+			<!--Container for the two main divs for each tab-->			
+			<div class="tab-info-container">
+
+				<!--Container for the information of the person for each tab-->
+				<div class="person-info">
+
+					<!--Div for the image-->
+					<div class="profile-picture">
+						<img src="images/askastudent-blank.png" alt="Vraag een student">
+					</div>
+
+					<!--Div for the information of the person-->
+					<div class="profile-info">
+						<h2>Rowina</h2>
+						<table>
+							<tr>
+								<td class="tabletitle">Naam: </td>
+								<td class="tabletext"> Rowina Jorna</td>
+							</tr>
+							<tr>
+								<td class="tabletitle">Leeftijd: </td>
+								<td class="tabletext"> 19</td>
+							</tr>
+							<tr>
+								<td class="tabletitle">Woonplaats: </td>
+								<td class="tabletext"> Leeuwarden <span class="fa fa-home "></span></td>
+							</tr>
+						</table>
+						<p>
+							Hoi! Ik ben Rowina eerste jaars student Communication and Multimedia Design.
+							Ik heb gekozen voor de major Visual Design. Ik heb deze major gekozen omdat dit echt bij mij past.
+							Ik ben graag bezig met designen, ik vind het heel leuk om creatief bezig te zijn.
 
 							Heb jij vragen voor mij? Wees niet bang en stuur ze naar mij! 
 							Dit kan ingevuld worden in het formulier hier naast.
@@ -195,31 +282,83 @@
 				</div>
 
 				<!--Container for the form for each tab-->
-				<div class="ask-a-student-form">
-					<h2>Contact</h2>	
+				<div class="ask-a-student-form">	
 					<div class="student-form">
-					<form action="mailto:j.tempels7@gmail.com" method="post" enctype="text/plain">	
-					<label>Naam: </label>
-					<input type="text" placeholder="Naam" id="fname">
-					<label>Email: </label>
-					<input type="text" placeholder="Email" id="email">
-					<label>Vraag: </label>
-					<textarea rows="10" cols="50" placeholder="Stel hier je vraag" id="Question"></textarea>
-					<input class="register-button" type="reset" value="Verstuur!" id="submit">
-					</form>
+						<h2>Contact</h2>	
+						<form action="mailto:j.tempels7@gmail.com" method="post" enctype="text/plain">	
+						<label>Naam: </label>
+						<input type="text" placeholder="Naam" id="fname">
+						<label>Email: </label>
+						<input type="text" placeholder="Email" id="email">
+						<label>Vraag: </label>
+						<textarea rows="10" cols="50" placeholder="Stel hier je vraag" id="Question"></textarea>
+						<input class="register-button floatright" type="reset" value="Verstuur!" id="submit">
+						</form>
 					</div>
 				</div>
 			</div>
 		</div>
-	
-		<!--Second div is for visual design-->
-		<div id="vd" class="tab-content">
-			<h2>Ik ben VD</h2>
 		</div>
 
 		<!--Third div is for game design-->
 		<div id="gd" class="tab-content">
-			<h2>Ik ben GD</h2>
+			
+			<!--Container for the two main divs for each tab-->			
+			<div class="tab-info-container">
+
+				<!--Container for the information of the person for each tab-->
+				<div class="person-info">
+
+					<!--Div for the image-->
+					<div class="profile-picture">
+						<img src="images/askastudent-blank.png" alt="Vraag een student">
+					</div>
+
+					<!--Div for the information of the person-->
+					<div class="profile-info">
+						<h2>Kelvin</h2>
+						<table>
+							<tr>
+								<td class="tabletitle">Naam: </td>
+								<td class="tabletext"> Kelvin Tromp</td>
+							</tr>
+							<tr>
+								<td class="tabletitle">Leeftijd: </td>
+								<td class="tabletext"> 20</td>
+							</tr>
+							<tr>
+								<td class="tabletitle">Woonplaats: </td>
+								<td class="tabletext"> Appingedam <span class="fa fa-home "></span></td>
+							</tr>
+						</table>
+						<p>
+							Hoi! Ik ben Kelvin derde jaars student Communication and Multimedia Design.
+							Ik heb gekozen voor de major Game Design. Ik heb deze major gekozen omdat dit echt bij mij past.
+							Ik game veel in mijn vrije tijd, daarom dacht ik 'hey dit moet bij mij passen'. Ik vind het heel leuk om te leren hoe games nou precies in elkaar zitten.
+
+							Heb jij vragen voor mij? Wees niet bang en stuur ze naar mij! 
+							Dit kan ingevuld worden in het formulier hier naast.
+						</p>
+					</div>
+				</div>
+
+				<!--Container for the form for each tab-->
+				<div class="ask-a-student-form">	
+					<div class="student-form">
+						<h2>Contact</h2>	
+						<form action="mailto:j.tempels7@gmail.com" method="post" enctype="text/plain">	
+						<label>Naam: </label>
+						<input type="text" placeholder="Naam" id="fname">
+						<label>Email: </label>
+						<input type="text" placeholder="Email" id="email">
+						<label>Vraag: </label>
+						<textarea rows="10" cols="50" placeholder="Stel hier je vraag" id="Question"></textarea>
+						<input class="register-button floatright" type="reset" value="Verstuur!" id="submit">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
 		</div>
 		
 		<!-- container for meeting -->
