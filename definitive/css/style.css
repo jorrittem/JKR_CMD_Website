@@ -543,7 +543,7 @@ h1, h2, h3, h4, h5, h6 {
 	height: 30%;
 	margin: 2%;
 	padding: 1%;
-	background-color: #fefefe; /* white */
+	background-color: #fefefe; /* very light gray (mostly white) */
 }
 
 .column img {
@@ -565,6 +565,88 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* info content */
+.admission-requirements {
+	padding-top: 50px;
+	text-align: center;
+}
+
+.schedule-and-books {
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 50px;
+}
+
+.schedule {
+	background-color: #eeeeef;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	padding: 10% 0;
+	width: 50%;
+}
+
+.schedule h2 {
+	text-align: center;
+}
+
+.books {
+	background-color: #684edd; /* soft blue */
+	color: #fff; /* white */
+	padding: 10% 0;
+	width: 50%;
+}
+
+.books h2 {
+	color: #fff; /* white */
+	text-align: center;
+}
+
+.schedule p {
+	margin-left: 10%;
+	margin-right: 10%;
+	text-align: center;
+}
+
+.books p {
+	margin-left: 15%;
+	margin-right: 15%;
+	text-align: center;
+}
+
+.video {
+	height: 600px; /* responsive auto height is impossible with iframe */
+	width: 100%;
+}
+.video iframe {
+	height: 100%;
+	width: 100%;
+}
+
+.bestel-nu h5  {
+	background-color: #fff; /* white */
+	border-radius: 10px;
+	color: #684edd; /* soft blue */
+	margin-left: 45%;
+	margin-right: 45%;
+	padding: 1%;
+	text-align: center;
+	width: 10%;
+}
+
+.bestel-nu  {
+	text-decoration: none;
+}
+
+.header-intro {
+	color: #fff; /* white */
+	font-size: 18px;
+	text-align: center;
+}
+
+.fa fa-chevron-down {
+	color: #999; /* dark gray */
+	font-size: 3px;
+	text-align: center;
+}
 
 /* contact content */
 .contact-content {
@@ -997,7 +1079,13 @@ footer > div { /* selects all div elements where the parent is a footer element 
 		width: 90%;
 	}
 	
-	/*Contact content*/
+	/* info content */
+	.schedule,
+	.books {
+		width: 100%;
+	}
+	
+	/* contact content */
 	.contact-content {
 		flex-direction: column;
 	}
