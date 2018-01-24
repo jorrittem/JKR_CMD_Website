@@ -832,8 +832,12 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight:700
 }
 
-.student-form input#fname,
-.student-form input#email{
+.student-form input#fname1,
+.student-form input#fname2,
+.student-form input#fname3,
+.student-form input#email1,
+.student-form input#email2,
+.student-form input#email3 {
 	width:77%;
 	height:30px;
 	font-size:14px;
